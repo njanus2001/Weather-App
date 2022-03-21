@@ -1,12 +1,42 @@
 body {
-    height: 100%;
-    background-color: darkgrey;
-  }
+    background-color: rgb(71, 71, 69);
+}
 
-.vertical-center {
+.weather-box {
     margin: 0;
+    background: rgb(167, 167, 167);
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 350px;
+    padding: 2em;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+}
+
+.text-header {
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.icon {
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    width: 5em;
+}
+
+.temp {
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
 }

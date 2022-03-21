@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <input class="form-control rounded-pill" type="text" placeholder="Country">
-
-    <script src="js/scripts.js"></script>
+<div class="weather-box">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form onsubmit="getWeather();return false" id="weather-form">
+                    <input class="form-control rounded-pill" type="text" placeholder="City" id="city">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="text-header" id="city-text"></h4>
+            </div>
+        </div>
+        <div class="row results-row" id="results">
+            <div class="col text-center align-items-center" style="visibility: hidden;" id="icon-div">
+                <img src="" alt="Weather Icon" class="icon" id="weather-icon">
+            </div>
+            <div class="col text-center align-items-center">
+                <h3 class="icon" id="temp"></h3>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
