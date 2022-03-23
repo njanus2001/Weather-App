@@ -1,5 +1,3 @@
-
-
 function getWeather () {
     let city = document.getElementById('city').value;
 
@@ -11,6 +9,6 @@ function getWeather () {
         document.getElementById('city-text').innerHTML = data.name;
         document.getElementById('weather-icon').src = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
         document.getElementById('icon-div').style.visibility = 'visible';
-        document.getElementById('temp').innerHTML = data.main.temp + "°C";
+        document.getElementById('temp').innerHTML = Math.round(data.main.temp) + "°C";
     });
 }
